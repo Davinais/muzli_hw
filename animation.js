@@ -1,8 +1,10 @@
-/* global document TimelineMax Power2 */
+/* global document TweenMax TimelineMax Power2 */
 document.addEventListener('DOMContentLoaded', function () {
     'use strict';
     var tl = new TimelineMax({yoyo: true, repeat: -1, repeatDelay: 0.4});
 
+    TweenMax.set("#redCirc", {transformOrigin: "35% 45%"});
+    TweenMax.set("#blueCirc", {transformOrigin: "65% 55%"});
     tl.addLabel("rectScale")
         .to(".rect01", 0.4, {attr: { height: 50 }, ease: Power2.easeIn}, "rectScale")
         .to(".rect02a", 0.4, {attr: { height: 0 }, ease: Power2.easeIn}, "rectScale")
@@ -36,5 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .to(".rect11", 0.4, {attr: { height: 0 }, ease: Power2.easeOut}, "rectOut")
         .to(".rect12", 0.4, {attr: { height: 0 }, ease: Power2.easeOut}, "rectOut")
         .to(".rect13", 0.4, {attr: { height: 0 }, ease: Power2.easeOut}, "rectOut")
-        .to(".rect14", 0.4, {attr: { height: 0 }, ease: Power2.easeOut}, "rectOut");
+        .to(".rect14", 0.4, {attr: { height: 0 }, ease: Power2.easeOut}, "rectOut")
+        .to("#redCirc", 0.4, {css: { rotation: 240 }}, "rectOut")
+        .to("#blueCirc", 0.4, {css: { rotation: 240 }}, "rectOut");
 });
