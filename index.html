@@ -10,13 +10,27 @@
     <script src="animation.js"></script>
 </head>
 <body>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 160 10" preserveAspectRatio="xMinYMid slice">
+            <g fill="#f7f7f7">
+                <text class="introTitle" text-anchor="start" y="5" font-size="2">
+                    <tspan x="6">ANIMAD</tspan>
+                    <tspan x="140">SIGN IN</tspan>
+                    <tspan dx="2">SIGN UP</tspan>
+                </text>
+            </g>
+            <g mask="url(#svgMask)" fill="#181421">
+                <text class="introTitle" text-anchor="start" y="5" font-size="2">
+                    <a href=""><tspan x="6">ANIMAD</tspan></a>
+                    <a href=""><tspan x="140">SIGN IN</tspan></a>
+                    <a href=""><tspan dx="2">SIGN UP</tspan></a>
+                </text>
+            </g>
+        </svg>
+    </nav>
     <main>
         <div id="wrapper">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 160 90" preserveAspectRatio="xMinYMid slice">
-                <style>
-                    .introTitle { font-family: 'Oswald'; }
-                    .introContent { font-family: 'Dosis'; }
-                </style>
                 <defs>
                     <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
                         <stop offset="0%" stop-color="#da4a4a" stop-opacity="0"/>
@@ -27,6 +41,16 @@
                         <stop offset="100%" stop-color="#398de8" stop-opacity="0"/>
                     </linearGradient>
                     <mask id="svgMask">
+                        <rect class="rect01" x="0" y="0" width="13" height="90" fill="#fff"/>
+                        <rect class="rect02a" x="12" y="0" width="12" height="12" fill="#fff"/>
+                        <rect class="rect02b" x="12" y="60" width="12" height="30" fill="#fff"/>
+                        <rect class="rect03a" x="23" y="0" width="12" height="12" fill="#fff"/>
+                        <rect class="rect03b" x="23" y="60" width="12" height="30" fill="#fff"/>
+                        <rect class="rect04a" x="34" y="0" width="12" height="12" fill="#fff"/>
+                        <rect class="rect04b" x="34" y="60" width="12" height="30" fill="#fff"/>
+                        <rect class="rect05a" x="45" y="0" width="12" height="12" fill="#fff"/>
+                        <rect class="rect05b" x="45" y="60" width="12" height="30" fill="#fff"/>
+                        <rect class="rect06" x="56" y="0" width="12" height="90" fill="#fff"/>
                         <rect class="rect07" x="67" y="0" width="13" height="90" fill="#fff"/>
                         <rect class="rect08" x="79" y="0" width="12" height="70" fill="#fff"/>
                         <rect class="rect09" x="90" y="0" width="12" height="70" fill="#fff"/>

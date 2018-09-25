@@ -5,8 +5,20 @@ body {
 main {
     overflow: hidden;
 }
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
 #wrapper {
     width: 100vw;
     height: 100vh;
     background-color: #181421;
+}
+.introTitle {
+    font-family: 'Oswald';
+}
+.introContent {
+    font-family: 'Dosis';
 }
